@@ -22,12 +22,11 @@ public class Eye : MonoBehaviour
 
         isFalling = true;
         Rigidbody body = gameObject.AddComponent<Rigidbody>();
-        // "traîné<e angulaire", càd la friction associée à la rotation
+        // "traînée angulaire", càd la friction associée à la rotation
         // 0.05f par défaut, nous mettons 0.8f pour ralentir les yeux.
         body.angularDrag = 1.0f;
         body.drag = 0.5f;
 
-        Debug.Log("i'm falliiiiiiiing!!!");
         StartCoroutine(FallEnd());
     }
 
@@ -36,7 +35,6 @@ public class Eye : MonoBehaviour
     IEnumerator FallEnd() {
         yield return new WaitForSeconds(4f);
         isFalling = false;
-        Debug.Log("finally, it's ok, i'm still alive");
 
         clone.SetActive(true);
     }
