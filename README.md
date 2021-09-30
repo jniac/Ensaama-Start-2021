@@ -27,7 +27,7 @@ on utilise `GetComponent<MonComposant>()`, par exemple :
 ```csharp
 Rigidbody body = GetComponent<Rigidbody>();
 ```
-Attention, le composant récupéré peut être nul (s'il n'existe pas)!
+Attention, le composant récupéré peut être nul (s'il n'existe pas)!  
 Voir usage dans [CubeController.cs](./Assets/Scripts/CubeController.cs).
 
 Pour ajouter un composant sur un gameObject,
