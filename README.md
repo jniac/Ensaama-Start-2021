@@ -18,5 +18,28 @@ Instantiate(gameObject);
 GameObject clone = Instantiate(gameObject); 
 Destroy(clone, 5f);
 ```
-[voir usage dans CloneOnClick.cs](./Assets/CloneOnClick.cs)
+[voir usage dans CloneOnClick.cs](./Assets/Scripts/CloneOnClick.cs)
 
+## Component (Accès à une instance, ajouter, détruire)
+
+Pour récupérer un composant existant sur un gameObject, 
+on utilise `GetComponent<MonComposant>()`, par exemple : 
+```csharp
+Rigidbody body = GetComponent<Rigidbody>();
+```
+Attention, le composant récupéré peut être nul (s'il n'existe pas)!
+Voir usage dans [CubeController.cs](./Assets/Scripts/CubeController.cs).
+
+Pour ajouter un composant sur un gameObject,
+on utilise `gameObject.AddComponent<MonComposant>()`, par exemple : 
+```csharp
+gameObject.AddComponent<Rigidbody>();
+```
+Voir usage dans [Eye.cs](./Assets/Scripts/Eye.cs).
+
+## Debug
+
+Pour mettre en pause le moteur Unity :
+```csharp
+Debug.Break();
+```
