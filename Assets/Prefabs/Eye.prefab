@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6623452900497960510}
   - component: {fileID: 436824862336517432}
   - component: {fileID: 244222692737169361}
+  - component: {fileID: 1994849319862230100}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -111,3 +112,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  isFalling: 0
+  clone: {fileID: 0}
+--- !u!114 &1994849319862230100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678051587839070187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6580c4b1a1e074adfac19e0f00141a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clampX: 1
+  minX: -30
+  maxX: 20
+  referenceX: 0
+  clampY: 0
+  minY: -45
+  maxY: -45
+  referenceY: 0
+  gizmosSize: 2
