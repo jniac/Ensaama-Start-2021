@@ -73,4 +73,8 @@ crashlytics-build.properties
 # MacOS settings
 .DS_Store
 
+# mesh cache?
+TDImportCache
+TDImportCache**
+
 Assets/TextMesh Pro/
