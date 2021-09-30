@@ -5,6 +5,8 @@ using UnityEngine;
 /// <summary>
 /// Dealing with rotation is hard.
 /// This class aim to simplify the process of clamping rotation values.
+/// Clamp is done during "LateUpdate", so any computation without regards for 
+/// clamp could be done during the "Update" phase.
 /// </summary>
 public class RotationClamp : MonoBehaviour
 {
