@@ -22,10 +22,14 @@ public class Eye : MonoBehaviour
 
         isFalling = true;
         Rigidbody body = gameObject.AddComponent<Rigidbody>();
+
         // "traînée angulaire", càd la friction associée à la rotation
-        // 0.05f par défaut, nous mettons 0.8f pour ralentir les yeux.
-        body.angularDrag = 1.0f;
+        // 0.05f par défaut, nous mettons 2.0f pour ralentir les yeux lorsqu'ils roulent.
+        body.angularDrag = 2.0f;
         body.drag = 0.5f;
+
+        // On retire la limite de rotation.
+        Destroy(GetComponent<RotationClamp>());
 
         StartCoroutine(FallEnd());
     }
