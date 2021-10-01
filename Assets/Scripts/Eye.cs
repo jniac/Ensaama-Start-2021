@@ -28,7 +28,7 @@ public class Eye : MonoBehaviour
         body.angularDrag = 2.0f;
         body.drag = 0.5f;
 
-        // On retire la limite de rotation.
+        // On retire la limite de rotation (l'oeil peut bouger librement désormais).
         Destroy(GetComponent<RotationClamp>());
 
         StartCoroutine(FallEnd());
