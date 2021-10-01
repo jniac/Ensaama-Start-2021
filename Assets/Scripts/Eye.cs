@@ -25,8 +25,8 @@ public class Eye : MonoBehaviour
 
         // "traînée angulaire", càd la friction associée à la rotation
         // 0.05f par défaut, nous mettons 2.0f pour ralentir les yeux lorsqu'ils roulent.
-        body.angularDrag = 2.0f;
-        body.drag = 0.5f;
+        body.angularDrag = 1.0f;
+        body.drag = 0.25f;
 
         // On retire la limite de rotation (l'oeil peut bouger librement désormais).
         Destroy(GetComponent<RotationClamp>());
