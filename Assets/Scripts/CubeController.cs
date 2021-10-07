@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// "Force" Unity à ajouter un composant Rigidbody lorsque une instance de CubeController est créé.
+[RequireComponent(typeof(Rigidbody))]
 public class CubeController : MonoBehaviour
 {
     public float moveSpeed = 5f;

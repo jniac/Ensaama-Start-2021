@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706917897}
   m_LocalRotation: {x: -0.30491036, y: -0, z: -0, w: 0.9523811}
-  m_LocalPosition: {x: 0, y: 9.51, z: -5.36}
+  m_LocalPosition: {x: 0, y: 9.48, z: -5.34}
   m_LocalScale: {x: 7.8953, y: 1, z: 3.2256467}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -242,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 1994849319862230100, guid: 287227c3a566c4beb93b26a7fc6bdea8,
         type: 3}
       propertyPath: fovX
-      value: 40
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 1994849319862230100, guid: 287227c3a566c4beb93b26a7fc6bdea8,
         type: 3}
@@ -258,6 +258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: angleY
       value: -160
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994849319862230100, guid: 287227c3a566c4beb93b26a7fc6bdea8,
+        type: 3}
+      propertyPath: clampX
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1994849319862230100, guid: 287227c3a566c4beb93b26a7fc6bdea8,
         type: 3}
@@ -347,7 +352,7 @@ PrefabInstance:
     - target: {fileID: 1994849319862230100, guid: 287227c3a566c4beb93b26a7fc6bdea8,
         type: 3}
       propertyPath: fovX
-      value: 40
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 1994849319862230100, guid: 287227c3a566c4beb93b26a7fc6bdea8,
         type: 3}

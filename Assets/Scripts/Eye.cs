@@ -6,7 +6,7 @@ public class Eye : MonoBehaviour
 {
     public Transform target;
     public bool isFalling = false;
-    public GameObject clone;
+    GameObject clone;
 
     void Update() {
         if (target != null) {
