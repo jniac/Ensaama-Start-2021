@@ -29,5 +29,8 @@ public class CrownChildCloner : MonoBehaviour
             Random.Range(20f, 30f),
             0f
         );
+
+        // Changeons la taille de l'enfant du clone (arf).
+        clone.transform.GetChild(0).localScale = Vector3.one * Random.Range(0.2f, 1f);
     }
 }
